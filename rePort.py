@@ -37,6 +37,7 @@ end_port = input('Ending Port?: ')
 # Allows user to put in URL or IP
 target_ip = socket.gethostbyname(ip)
 
+# User Input
 print('Starting scan on host:', target_ip)
 
 # Start the timer
