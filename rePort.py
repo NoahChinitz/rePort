@@ -38,7 +38,7 @@ end_port = input('Ending Port?: ')
 target_ip = socket.gethostbyname(ip)
 
 # User Input
-print('Starting scan on host:', target_ip)
+print('\nStarting scan on ' + str(target_ip))
 
 # Start the timer
 start = time.time()
@@ -48,17 +48,18 @@ open_ports = []
 
 # Go through the range of ports from start_port to end_port
 for port in range(int(start_port), int(end_port)+1):
+    print('Scanning port ' + str(port) + '...')
     if rePort(port):
         open_ports.append(port)
-        print('Port ' + str(port) + ' is open')
+        print('Port ' + str(port) + ': open')
     else:
-        print('Port ' + str(port) + ' is closed')
+        print('Port ' + str(port) + ': closed')
 
 # End the timer
 end = time.time()
 
 # Print out open ports
-print('Open Ports: ', open_ports)
+print('\nOpen Ports: ', open_ports)
 
 # Print out time taken
 print(f'Time Taken: {end-start:.4f} seconds')
