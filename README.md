@@ -1,10 +1,13 @@
 # rePort
+
 Naive Port Scanner by Noah Chinitz
 
-### To Run:
-<li>Simply clone the repository into your local machine </li>
-<li> Open a terminal and type `python3 rePort.py` </li>
-<li> Input a host name when prompted</li>
-<li> Input a starting port when prompted</li>
-<li> Input an ending port when prompted</li>
-<li> Wait for execution to finish!</li>
+### **To Run:**
+
+- Simply take the file `rePort.py` straight from the Google Drive and put it somewhere on your local machine
+- Ensure that Python3 is installed on your local machine
+- Open a terminal and `cd` to the directory in which `rePort.py` is in and type `python3 rePort.py`
+- Input a host name when prompted
+- Input a starting port when prompted
+- Input an ending port when prompted
+- Wait for execution to finish!
